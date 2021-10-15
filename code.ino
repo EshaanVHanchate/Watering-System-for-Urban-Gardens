@@ -11,13 +11,13 @@ void loop() {
   int sensorValue;
   sensorValue = analogRead(A0);
   delay(2000);
-  Serial.println(sensorValue);
+  Serial.println(sensorValue); //To see values in Serial Monitor
   if(sensorValue>=600){
-  digitalWrite(relay,HIGH);
-  digitalWrite(led,HIGH);
+  digitalWrite(relay,HIGH); //turns relay ON and watering starts
+  digitalWrite(led,HIGH); //LED turns ON to indicate
   }
   else{
-  digitalWrite(relay,LOW);
-  digitalWrite(led,LOW);
+  digitalWrite(relay,LOW); //turns relay OFF
+  digitalWrite(led,LOW); //LED turns OFF
   }
   }
