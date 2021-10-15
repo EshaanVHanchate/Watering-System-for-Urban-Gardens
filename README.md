@@ -18,4 +18,5 @@ Components Required:
 
 Baud Rate for Galileo gen2 = 115200
 >> We will be watering if sensorValue of the soil goes above 600 (obtained through testing).
+
 >> Use Relay in Normally Open (NO) setting.
